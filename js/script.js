@@ -49,7 +49,7 @@ const data = [
         title: '중요공지 | Christmas 이벤트',
         date: '2026.12.25',
         content: 'Christmas 이벤트 진행',
-        image: '/images/event.png',
+        image: './images/event.png',
         fixed: true
     },
 
@@ -58,7 +58,7 @@ const data = [
         title: '신규 메뉴 출시',
         date: '2026.12.20',
         content: '신규 메뉴 출시관련 이벤트',
-        image: '/images/menu.png',
+        image: './images/menu.png',
         fixed: false
     },
 
@@ -67,7 +67,7 @@ const data = [
         title: 'ort special 메뉴 출시',
         date: '2026.05.18',
         content: '떡볶이, ort 라면, 만두 라면',
-        image: '/images/detail.png',
+        image: './images/detail.png',
         fixed: false
     }
 ];
