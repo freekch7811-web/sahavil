@@ -11,6 +11,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" sizes="80x80" href="../images/pavicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN 형식으로 연결한 aosjs -->
 </head>
 
 <body>
@@ -56,6 +58,9 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
         </ul>
+        <div class="header-text">
+            <p>STROE</p>
+        </div>
     </div>
 
     <!-- banner_wrap E -->
@@ -66,8 +71,9 @@
 
     <section class="split section"><!-- split,reverse section S -->
 
-        <div class="image zoom store"><img src="../images/store1.png"></div>
-        <div class="text">
+        <div class="image zoom store" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img
+                src="../images/store1.png"></div>
+        <div class="text" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>1호점(괴정동)
             </h2>
             <p>사하구 괴정동에 위치한 동네카페</p>
@@ -123,6 +129,11 @@
     </div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- CDN형식으로 연결한 aosjs -->
 
     <script src="../js/jquery-4.0.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

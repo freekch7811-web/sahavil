@@ -11,11 +11,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" sizes="80x80" href="../images/pavicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN 형식으로 연결한 aosjs -->
 </head>
 
 <body>
 
-<!-- banner_wrap S -->
+    <!-- banner_wrap S -->
     <div id="header_wrap">
         <div class="header">
             <h1 class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a> </h1>
@@ -56,6 +58,9 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
         </ul>
+        <div class="header-text">
+            <p>COFFEE</p>
+        </div>
     </div>
 
     <!-- banner_wrap E -->
@@ -66,8 +71,8 @@
 
     <section class="split section"><!-- split,reverse section S -->
 
-        <div class="image zoom coffee"><img src="../images/coffee1.png"></div>
-        <div class="text">
+        <div class="image zoom coffee" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="../images/coffee1.png"></div>
+        <div class="text" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>따뜻하고 맛있는 커피
             </h2>
             <p>풍부한 크레마의 라떼 아트</p>
@@ -77,8 +82,8 @@
     </section><!-- split section E -->
 
     <section class="split reverse section">
-        <div class="image zoom coffee"><img src="../images/coffee2.png"></div>
-        <div class="text">
+        <div class="image zoom coffee" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="../images/coffee2.png"></div>
+        <div class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>ort cafe만의 ort빵</h2>
             <p>갓 구워낸 듯한 노릇노릇한 빵</p>
             <p>주변에 은은하게 퍼지는 빵 냄새</p>
@@ -92,7 +97,8 @@
 
     <section class="split section">
 
-        <div class="image zoom"><img src="../images/coffee3.png"></div>
+        <div class="image zoom" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"><img src=" ../images/coffee3.png"></div>
     </section><!-- split section E -->
 
     <div id="footerwrap">
@@ -127,6 +133,11 @@
     </div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- CDN형식으로 연결한 aosjs -->
 
     <script src="../js/jquery-4.0.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

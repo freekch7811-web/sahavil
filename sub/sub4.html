@@ -15,7 +15,7 @@
 
 <body>
 
-<!-- banner_wrap S -->
+    <!-- banner_wrap S -->
     <div id="header_wrap">
         <div class="header">
             <h1 class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a> </h1>
@@ -44,7 +44,6 @@
                         <li><a href="#">EVENT</a></li>
                     </ul>
                 </li>
-
         </div>
     </div>
     <div class="banner">
@@ -56,70 +55,69 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
         </ul>
+        <div class="header-text">
+            <p>NOTICE</p>
+        </div>
     </div>
 
     <!-- banner_wrap E -->
 
-    <!-- <div id="header-text">
-        <p>매장안내</p>
-    </div> -->
+    <!-- 공지사항_S -->
+    <section class="notice-page">
 
-   <!-- 공지사항_S -->
-<section class="notice-page">
+        <h1>공지사항</h1>
 
-    <h1>공지사항</h1>
+        <div class="board" id="listView">
 
-    <div class="board" id="listView">
+            <div class="search-box">
+                <select id="field">
+                    <option value="title">제목</option>
+                    <option value="content">내용</option>
+                </select>
+                <input id="q" placeholder="검색">
+                <button onclick="search()">검색</button>
+            </div>
 
-        <div class="search-box">
-            <select id="field">
-                <option value="title">제목</option>
-                <option value="content">내용</option>
-            </select>
-            <input id="q" placeholder="검색">
-            <button onclick="search()">검색</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody id="rows"></tbody>
+            </table>
+
+            <div id="pager" class="pager"></div>
+
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>NO</th>
-                    <th>제목</th>
-                    <th>작성일</th>
-                </tr>
-            </thead>
-            <tbody id="rows"></tbody>
-        </table>
+        <div class="detail hidden" id="detailView">
 
-        <div id="pager" class="pager"></div>
+            <div class="detail-top">
+                <span id="dtitle"></span>
+                <span id="ddate"></span>
+            </div>
 
-    </div>
+            <div class="detail-body">
+                <img id="dimg">
+                <p id="dcontent"></p>
+            </div>
 
-    <div class="detail hidden" id="detailView">
+            <div class="list-btn">
+                <button onclick="backList()">목록</button>
+            </div>
 
-        <div class="detail-top">
-            <span id="dtitle"></span>
-            <span id="ddate"></span>
+            <div class="move-post">
+                <div id="prev"></div>
+                <div id="next"></div>
+            </div>
+
         </div>
 
-        <div class="detail-body">
-            <img id="dimg">
-            <p id="dcontent"></p>
-        </div>
-
-        <div class="list-btn">
-            <button onclick="backList()">목록</button>
-        </div>
-
-        <div class="move-post">
-            <div id="prev"></div>
-            <div id="next"></div>
-        </div>
-
-    </div>
-
-</section>
-<!-- 공지사항_E -->
+    </section>
+    <!-- 공지사항_E -->
 
     <div id="footerwrap">
         <div class="footer">

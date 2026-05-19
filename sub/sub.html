@@ -11,11 +11,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" sizes="80x80" href="../images/pavicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN 형식으로 연결한 aosjs -->
 </head>
 
 <body>
 
-<!-- banner_wrap S -->
+    <!-- banner_wrap S -->
     <div id="header_wrap">
         <div class="header">
             <h1 class="logo"><a href="../index.html"><img src="../images/logo.png" alt="logo"></a> </h1>
@@ -56,6 +58,9 @@
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
         </ul>
+        <div class="header-text">
+            <p>BRAND</p>
+        </div>
     </div>
 
     <!-- banner_wrap E -->
@@ -66,10 +71,10 @@
 
     <section class="split section"><!-- split,reverse section S -->
 
-        <div class="image zoom"><img src="../images/brand1.png"></div>
-        <div class="text">
+        <div class="image zoom" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="../images/brand1.png"></div>
+        <div class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2><span>ORT CAFE에 오신것을
-                <br>환영합니다.</span>
+                    <br>환영합니다.</span>
             </h2>
             <p>ort coffee는 2026년 신규 오픈한 곳으로</p>
             <p>'커피 마시는 곳(동네,마을)'에서 만나는 따뜻한 휴식과 </p>
@@ -78,10 +83,10 @@
     </section><!-- split section E -->
 
     <section class="split reverse section">
-        <div class="image zoom"><img src="../images/brand2.png"></div>
-        <div class="text">
+        <div class="image zoom" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="../images/brand2.png"></div>
+        <div class="text" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2><span>편안하고 따뜻한
-                <br>코너공간</span>
+                    <br>코너공간</span>
             </h2>
             <p>아늑한 소파와 쿠션, 책들이 놓여 있어</p>
             <p>누구나 편안하게 쉴 수 있는 공간</p>
@@ -91,8 +96,8 @@
 
     <section class="split section">
 
-        <div class="image zoom"><img src="../images/brand3.png"></div>
-        <div class="text">
+        <div class="image zoom" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"><img src="../images/brand3.png"></div>
+        <div class="text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2><span>'ort coffee' 브랜드 로고</span></h2>
             <p>심플하면서도 친근한 디자인</p>
             <p>로고가 새겨진 머그컵이나 에코백</p>
@@ -132,11 +137,16 @@
     </div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- CDN형식으로 연결한 aosjs -->
 
     <script src="../js/jquery-4.0.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-4.0.0.js"
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
         integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <!-- CDN 방식으로 들고 온 제이쿼리 -->
 
